@@ -295,6 +295,12 @@ case "$1" in
         ;;
 esac
 
+
+# j'ai dejà un fichier claude-rollback.sh donc de le déactive ici
+#  Utiliser un bloc : <<'EOF' pour que Tout ce qui est écrit ici
+# sera ignoré par le shell,
+# comme un commentaire multi-ligne. ( : <<'END' ...... END
+: <<'END'
 # =============================================================================
 # SCRIPT 2: claude-rollback (~/bin/claude-rollback)
 # =============================================================================
@@ -508,3 +514,4 @@ case "$1" in
         perform_rollback "$1" "false" "false"
         ;;
 esac
+END

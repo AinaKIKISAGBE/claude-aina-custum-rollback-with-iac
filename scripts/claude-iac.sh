@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script principal
+# Script principal claude-iac.sh
 # Claude IaC System avec Versioning et Rollback
 # Créer ce script en tant que ~/bin/claude-iac
 

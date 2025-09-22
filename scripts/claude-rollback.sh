@@ -253,6 +253,12 @@ perform_rollback() {
     local force_mode="$2"
     local dry_run="$3"
     
+    # Gérer les options d'aide
+    if [ "$version_id" = "--help" ] || [ "$version_id" = "-h" ]; then
+        show_usage
+        return 0
+    fi
+    
     if [ -z "$version_id" ]; then
         error "Version ID requis pour le rollback"
         show_usage

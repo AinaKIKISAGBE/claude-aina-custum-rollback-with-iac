@@ -2,7 +2,7 @@
 # =============================================================================
 # SCRIPT 1: claude-versions (~/bin/claude-versions)
 # =============================================================================
-# Gestion versions
+# Gestion versions : claude-versions.sh
 # Gestionnaire de versions Claude IaC
 
 CLAUDE_STATE_DIR="/opt/claude-state"
